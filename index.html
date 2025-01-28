@@ -1,0 +1,561 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preload" href="images/TD-embossed.webp" as="image" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Theater D</title>
+  </head>
+  <body>
+    <!-- Page header, which includes a partially transparent background to make it nearly white -->
+    <div class="header">
+      <img id="program-header" src="images/TD-header.png" />
+      <!-- This is the page navigation bar. -->
+      <div id="nav-bar">
+        <div id="nav-bar-logo-container">
+          <img id="nav-bar-logo" src="images/TD-logo.webp" />
+        </div>
+        <div id="nav-buttons">
+          <div class="nav-btn" id="home">Home</div>
+          <div class="nav-btn" id="about">About TD</div>
+          <div class="nav-btn" id="pastshows">Past Shows</div>
+          <div class="nav-btn" id="donations">Donations</div>
+          <div class="nav-btn" id="dft">DFT</div>
+          <div class="nav-btn" id="deerfieldtya">Deerfield TYA</div>
+        </div>
+      </div>
+    </div>
+    <!-- Next is everything after page header. The after-header div has gradient that continues from the header color -->
+    <div class="after-header">
+      <!-- This is the main page content after the nav-bar. Can be different per page. -->
+      <div id="main-page-content">
+        <!-- This is then the show announcement, with text (narrow or wide), 
+        and show image with overlay text (narrow or wide) -->
+
+        <!-- Thank you for latest show, and stay tuned -->
+        <div id="thank-you-stay-tuned">
+          <div class="thank-you-text">
+            Thank you to everyone who came out<br />
+            to see our April 2024 production!
+          </div>
+          <div>
+            <img id="showlogo2" src="images/TD-show2.webp" />
+          </div>
+          <div class="thank-you-text2">Stay tuned for info about our 2025 production!</div>
+        </div>
+
+        <div id="audition-announcement-group">
+          <!--After auditions-->
+          <!-- This is for wider screens -->
+          <div class="show-announcement-columns">
+            <div class="info-text-columns">
+              Tickets are Now on Sale for<br />Theater D's Spring 2025 Production!
+            </div>
+            <div class="show-flex">
+              <div class="logo-side">
+                <a href="https://deerfieldtheater.ludus.com">
+                  <img class="showlogo zoom-image" src="images/TD-show-new.webp"
+                /></a>
+              </div>
+              <div class="text-side">
+                <div class="performance-title-column">Performance and<br />Ticket Info</div>
+                <div class="performance-text-items-column">
+                  <div class="performance-text-column">
+                    Friday, Saturday, Sunday<br />
+                    March 28, 29, 30<br />
+                    April 4, 5, 6<br />
+                    April 11, 12, 13
+                  </div>
+
+                  <div class="performance-text-column">
+                    Caruso Auditorium<br />
+                    1801 Montgomery Rd, Deerfield
+                  </div>
+                </div>
+                <div class="tickets-text-column">
+                  Click
+                  <a id="tickets-text-link-column" href="https://deerfieldtheater.ludus.com"
+                    >here</a
+                  >
+                  to reserve your seats!
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- The following is for narrower screens -->
+          <div class="show-announcement">
+            <div class="info-text-wide">
+              Tickets are Now on Sale for<br />Theater D's Spring 2025 Production!
+            </div>
+            <div class="info-text-narrow">
+              Tickets are Now on Sale for<br />Theater D's Spring 2025 Production!
+            </div>
+
+            <div class="logo-container">
+              <a href="https://deerfieldtheater.ludus.com">
+                <img class="showlogo zoom-image" src="images/TD-show-new.webp"
+              /></a>
+            </div>
+
+            <div class="performance-info">
+              <div class="performance-title">Performance and Ticket Info</div>
+              <div class="performance-text-items">
+                <div class="performance-text">
+                  Friday, Saturday, Sunday<br />
+                  March 28, 29, 30<br />
+                  April 4, 5, 6<br />
+                  April 11, 12, 13
+                </div>
+                <div class="performance-text">
+                  Caruso Auditorium<br />
+                  1801 Montgomery Rd, Deerfield
+                </div>
+                <div class="tickets-text">
+                  Click
+                  <a id="tickets-text-link" href="https://deerfieldtheater.ludus.com">here</a>
+                  to reserve your seats!
+                </div>
+              </div>
+            </div>
+            <div class="show-info-narrow">
+              Click
+              <a
+                class="audition-link"
+                href="https://www.signupgenius.com/go/20F0C4FACAC22A6FD0-52538808-auditions#/"
+                >here</a
+              >
+              to book<br />your audition appointment
+            </div>
+          </div>
+        </div>
+
+        <div id="show-announcement-group">
+          <!--After auditions-->
+          <!-- This is for wider screens -->
+          <div class="show-announcement-columns">
+            <div class="info-text-columns">
+              Tickets are Now on Sale for<br />Theater D's Spring 2025 Production!
+            </div>
+            <div class="show-flex">
+              <div class="logo-side">
+                <a
+                  href="https://register.deerfieldparks.org/wbwsc/webtrac.wsc/splash.html?interfaceparameter=5"
+                  ><img class="showlogo zoom-image" src="images/TD-show-new.webp"
+                /></a>
+              </div>
+              <div class="text-side">
+                <div class="performance-title-column">Performance Information</div>
+                <div class="performance-text-items-column">
+                  <div class="performance-text-column">
+                    Caruso Auditorium<br />
+                    1801 Montgomery Road, Deerfield
+                  </div>
+                  <div class="performance-text-column">
+                    Friday-Sunday, March 28, 29, 30<br />
+                    Friday-Sunday, April 4, 5, 6<br />
+                    Friday-Sunday, April 11, 12, 13
+                  </div>
+                  <div class="performance-text-column">Ticket information coming soon!</div>
+                </div>
+                <div class="ticket-announce-column">
+                  Click
+                  <a
+                    href="https://register.deerfieldparks.org/wbwsc/webtrac.wsc/splash.html?interfaceparameter=5"
+                    >here</a
+                  >
+                  to reserve your seats!
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- The following is for narrower screens -->
+          <div class="show-announcement">
+            <div class="info-text-wide">
+              Tickets are Now on Sale for<br />Theater D's April 2024 Production!
+            </div>
+            <div class="info-text-narrow">
+              Tickets are Now on Sale for<br />Theater D's April 2024 Production!
+            </div>
+            <div class="logo-container">
+              <a
+                href="https://register.deerfieldparks.org/wbwsc/webtrac.wsc/splash.html?interfaceparameter=5"
+                ><img class="showlogo zoom-image" src="images/TD-show-new.webp"
+              /></a>
+              <div class="show-info-wide">
+                <p>Click here to reserve your seats now!</p>
+              </div>
+            </div>
+            <div class="show-info-narrow">
+              Click
+              <a
+                href="https://register.deerfieldparks.org/wbwsc/webtrac.wsc/splash.html?interfaceparameter=5"
+                >here</a
+              >
+              to reserve your seats now!
+            </div>
+            <div class="performance-info">
+              <div class="performance-title">Performance Information</div>
+              <div class="performance-text-items">
+                <div class="performance-text">
+                  Caruso Auditorium<br />
+                  1801 Montgomery Road, Deerfield
+                </div>
+                <div class="performance-text">
+                  Friday-Sunday, March 28, 29, 30<br />
+                  Friday-Sunday, April 4, 5, 6<br />
+                  Friday-Sunday, April 11, 12, 13
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cast-info">
+          <!--Not used for TD show in 2024-->
+          <div id="cast-title">We are excited to announce our cast!</div>
+          <div id="cast-list">
+            <div class="cast-item">
+              <div class="character-name">Stage Manager</div>
+              <div class="actor-name">Geoff Isaac</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Dr. Gibbs</div>
+              <div class="actor-name">Chuck Quinn</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Joe Crowell</div>
+              <div class="actor-name">Lilu Weisberger</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Howie Newsome</div>
+              <div class="actor-name">Robert McDonough</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Mrs. Gibbs</div>
+              <div class="actor-name">Elise de Roulet</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Mrs. Webb</div>
+              <div class="actor-name">Christine Jones</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">George Gibbs</div>
+              <div class="actor-name">Chuck Quinn IV</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Rebecca Gibbs</div>
+              <div class="actor-name">Aria Karpinos</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Wally Webb</div>
+              <div class="actor-name">Teagan Yokozawa</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Emily Webb</div>
+              <div class="actor-name">Sarah Canon</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Professor Willard</div>
+              <div class="actor-name">Francis Brady</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Mr. Webb</div>
+              <div class="actor-name">Dick Salon</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Woman In The Balcony</div>
+              <div class="actor-name">Julie Stevens</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Belligerent Man In Auditorium /<br />Sam Craig</div>
+              <div class="actor-name">Al Katz-Mariani</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Lady In The Box</div>
+              <div class="actor-name">Susie Mason</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Simon Stimson</div>
+              <div class="actor-name">Ryan Bond</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Mrs. Soames</div>
+              <div class="actor-name">Amy Ticho</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Constable Warren</div>
+              <div class="actor-name">Art Bloch</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Si Crowell</div>
+              <div class="actor-name">Lilu Weisberger</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Baseball Players</div>
+              <div class="actor-name">Cole Nelson<br />Lilu Weisberger</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Joe Stoddard</div>
+              <div class="actor-name">Francis Brady</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Man Among The Dead</div>
+              <div class="actor-name">Cole Nelson</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Woman Among The Dead</div>
+              <div class="actor-name">Susie Mason</div>
+            </div>
+            <div class="cast-item">
+              <div class="character-name">Dead Person /<br />Choir</div>
+              <div class="actor-name">Larry Mason</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="past-shows">
+          <div id="past-shows-title">Our Past Shows!</div>
+          <div id="show-blocks">
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/NoisesOff2024.webp" />
+              <div class="past-show-year">2024</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/InheritTheWind2023.webp" />
+              <div class="past-show-year">2023</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/DontDressForDinner2022.webp" />
+              <div class="past-show-year">2022</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/AlmostMaine2019.webp" />
+              <div class="past-show-year">2019</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/OverTheRiver2018.webp" />
+              <div class="past-show-year">2018</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/IHateHamlet2017.webp" />
+              <div class="past-show-year">2017</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/Arsenic2016.webp" />
+              <div class="past-show-year">2016</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/Barefoot2015.webp" />
+              <div class="past-show-year">2015</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/TillTheFatLadySings2014.webp" />
+              <div class="past-show-year">2014</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/LeadingLadies2013.webp" />
+              <div class="past-show-year">2013</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/Foreigner2012.webp" />
+              <div class="past-show-year">2012</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/Squabbles2011.webp" />
+              <div class="past-show-year">2011</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/LendMeaTenor2010.webp" />
+              <div class="past-show-year">2010</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/Rumors2009.webp" />
+              <div class="past-show-year">2009</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/AnyNumber2008.webp" />
+              <div class="past-show-year">2008</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/MoonOverBuffalo2007.webp" />
+              <div class="past-show-year">2007</div>
+            </div>
+            <div class="logo-block">
+              <img class="past-show-logo" src="images/pastshows/Affluenza2006.webp" />
+              <div class="past-show-year">2006</div>
+            </div>
+          </div>
+        </div>
+        <div id="donations-page">
+          <div id="donations-title">Donate to Support Deerfield Theater Programs</div>
+          <div id="donations-page-text">
+            <div class="donations-text">It takes a lot of help to put a show together!</div>
+            <div class="donations-text">
+              If you would like to volunteer for any of our shows, please contact Shannon Cahill,
+              Deerfield Park District Recreation Supervisor - Cultural Arts, Special Events, and
+              Community Programming, at
+              <a href="mailto:ShannonC@deerfieldparks.org">ShannonC@deerfieldparks.org</a>.
+            </div>
+            <div class="donations-text">
+              To make a cash donation, please click
+              <a
+                href="https://register.deerfieldparks.org/wbwsc/webtrac.wsc/donation.html?interfaceparameter=5"
+                >here</a
+              >
+              or <br />contact the Deerfield Park District at 847-945-0650.
+            </div>
+            <div class="donations-text">Thank you!</div>
+          </div>
+        </div>
+        <div id="about-page">
+          <div class="about-title">About Theater D</div>
+          <div id="about-page-text">
+            <div class="about-text">
+              <p>
+                Theater D was founded in 2005 as an extension of Deerfield Family Theater. A group
+                of friends, having experienced the fun of Deerfield Family Theater (DFT), got
+                together to discuss the idea of Deerfield having more than just one theatrical
+                production each year. DFT had already targeted family theater, so the goal of
+                Theater D was to provide a theater experience geared more towards an adult audience.
+              </p>
+              <p>
+                We are committed to bringing professional quality entertainment to Deerfield's own
+                backyard. You no longer have to go downtown to experience great theater. Our mission
+                with Theater D is to find challenging performance opportunities for adults and
+                enjoyable, dramatic and comic theatrical entertainment for the North Shore.
+              </p>
+              <p>
+                Donna Price was a founder and longtime producer of Theater D. We seek to honor her
+                legacy through our quality performances.
+              </p>
+            </div>
+            <div class="about-title">The Deerfield Theater<br />Board of Directors</div>
+            <div class="board-text">
+              Larry Aaronson<br />
+              Marci Medwed Barnett<br />
+              Dan Berman<br />
+              Chas Carol<br />
+              Ryan Elliott<br />
+              Arlene Fine<br />
+              Jo Anne Gottfried<br />
+              Laney Haupert<br />
+              Claire Higgins<br />
+              Mathew Kerbis<br />
+              Larry Mason<br />
+              Susie Mason<br />
+              Chris Morgan<br />
+              Lauren Price<br />
+              Marc Price<br />
+              Lee Rivlin<br />
+              Julie Schneider<br />
+              Scott Schwartz<br />
+              Julie Stevens<br />
+              Sue Vani<br />
+              Steve Zeal
+            </div>
+            <div id="ADA-title">Americans with Disabilities Act</div>
+            <div id="ADA-notice">
+              <p>
+                Our Park District and other public agencies are subject to the provisions of the
+                Americans with Disabilities Act (ADA), which prohibits discrimination in the
+                services, programs or facilities provided to individuals with disabilities. If you
+                believe that, in accordance with the Americans with Disabilities Act, special
+                assistance may be required when participating in a program, using a facility or
+                receiving a service, please contact Executive Director Jeff Harvey at 847-572-2612.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Directions bar -->
+      <!-- <div id="direction-bar">
+        <div id="directions-intro">DIRECTIONS TO THE THEATER:</div>
+        <div class="directions">
+          <img class="map-pin" src="images/map-pin.webp" />
+          <a
+            class="direction-link"
+            href="https://www.google.com/maps/dir/Current+Location/42.16936129460675,-87.87289655274725"
+            target="_self"
+            >From your location</a
+          >
+        </div>
+        <div class="directions">
+          <img class="map-pin" src="images/map-pin.webp" />
+          <a
+            class="directions-link"
+            href="https://www.google.com/maps/dir/?api=1&origin=42.16911208400764,-87.87140041251554&destination=42.16936129460675,-87.87289655274725&travelmode=driving"
+            target="_self"
+            >From Caruso entrance road</a
+          >
+        </div>
+      </div> -->
+
+      <!-- This is the icon-bar -->
+      <div id="icon-bar">
+        <div id="icons">
+          <a
+            href="https://open.spotify.com/show/3oloGjAdwDtbNd8TybNMI5?si=1eKesfZeSTqVe9DHbE5gPw&dl_branch=1"
+            ><img id="podcast" class="icon-item" src="images/DFT-podcast.png"
+          /></a>
+          <a href="https://deerfieldtheater.substack.com/subscribe"
+            ><img id="DFT-email" class="icon-item" src="images/DFT-email.png"
+          /></a>
+          <a href="http://www.deerfieldparks.org/"
+            ><img id="DFPD" class="icon-item" src="images/DFPDlogo.png"
+          /></a>
+          <a href="http://www.arts.illinois.gov/"
+            ><img id="IAC" class="icon-item" src="images/IAC.png"
+          /></a>
+          <a href="https://www.arts.gov/"
+            ><img id="NEA" class="icon-item" src="images/NEA.png"
+          /></a>
+        </div>
+      </div>
+      <div id="photo-box">
+        <img class="photo" src="images/photos/Noises1.webp" />
+        <img class="photo" src="images/photos/Inherit1.webp" />
+        <img class="photo" src="images/photos/Noises2.webp" />
+        <img class="photo" src="images/photos/Inherit2.webp" />
+        <img class="photo" src="images/photos/Noises3.webp" />
+        <img class="photo" src="images/photos/Inherit3.webp" />
+        <img class="photo" src="images/photos/Noises4.webp" />
+        <img class="photo" src="images/photos/Inherit4.webp" />
+        <img class="photo" src="images/photos/Noises5.webp" />
+        <img class="photo" src="images/photos/Inherit5.webp" />
+        <img class="photo" src="images/photos/Noises6.webp" />
+        <img class="photo" src="images/photos/Inherit6.webp" />
+        <img class="photo" src="images/photos/Noises7.webp" />
+      </div>
+      <div id="bottom-bar">
+        <div id="DFT-info">
+          <div id="top-row">
+            <div id="address-name">
+              <div id="DFT-name">&copy; Deerfield Family Theater</div>
+              <div id="DFT-address">836 Jewett Park Drive • Deerfield IL 60015</div>
+            </div>
+            <div id="social-media">
+              <a href="https://m.facebook.com/DeerfieldFamilyTheater">
+                <img id="facebook" src="images/facebook.webp"
+              /></a>
+              <a href="https://www.instagram.com/DeerfieldFamilyTheater">
+                <img id="instagram" src="images/instagram.webp"
+              /></a>
+            </div>
+          </div>
+          <div id="for-more-info">
+            For more information:<br />Contact Shannon Cahill, Recreation Supervisor - Cultural
+            Arts, Special Events, and Community Programming, at ShannonC@deerfieldparks.org
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- </div> -->
+  </body>
+</html>
