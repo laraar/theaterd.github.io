@@ -165,7 +165,7 @@ to avoid the need for small fractions.*/
   display: none;
 }
 #audition-announcement-group {
-  display: block;
+  display: none;
 }
 
 .show-announcement-columns {
@@ -175,7 +175,7 @@ to avoid the need for small fractions.*/
 }
 
 #thank-you-stay-tuned {
-  display: none;
+  display: block;
 }
 
 .info-text-columns,
@@ -188,7 +188,7 @@ to avoid the need for small fractions.*/
 }
 .thank-you-text2 {
   font: 600 calc(var(--cw) * 4) Arial, Helvetica, sans-serif;
-  color: rgb(234, 197, 72);
+  color: #fcdcaa;
   vertical-align: top;
   margin: 0;
   margin-top: calc(var(--cw) * 2.5);
@@ -330,7 +330,7 @@ with pieces similarly scaling */
   color: #fcdcaa;
 }
 #cast-info {
-  display: block;
+  display: none;
 }
 .performance-title,
 #cast-title {
@@ -418,7 +418,7 @@ with pieces similarly scaling */
 /* Center the last row's children */
 /* May need to adjust the "n+2" to be n+1 if there is just 1 in the row at some point*/
 /* And may need to get rid of this if there are actually 3 in the last row */
-.logo-block:nth-last-child(-n + 2):nth-last-child(-n + 2) {
+.logo-block:nth-last-child(-n + 3):nth-last-child(-n + 3) {
   margin-left: auto; /* Auto margin pushes the last row's children to the center */
   margin-right: auto; /* Auto margin pushes the last row's children to the center */
 }
