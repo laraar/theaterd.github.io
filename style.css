@@ -1,5 +1,10 @@
 /** @format */
 
+@font-face {
+  font-family: "Fino";
+  src: url("/fonts/FinoSans.otf") format("opentype");
+}
+
 /* The env(safe-area-insert) item makes it so the notch 
 in iPhone or the like will not pose a problem */
 html {
@@ -175,7 +180,82 @@ to avoid the need for small fractions.*/
 }
 
 #thank-you-stay-tuned {
+  display: none;
+}
+
+#later-show-info {
   display: block;
+  width: 95%;
+  margin: auto;
+  font: 300 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
+  color: rgb(234, 197, 72);
+}
+
+.later-show-announce-title {
+  font: 700 calc(var(--cw) * 5) Arial, Helvetica, sans-serif;
+  color: #1a0466;
+  margin: 0;
+  margin-bottom: calc(var(--cw) * 1.9);
+  display: block;
+}
+#event-title {
+  text-decoration: none;
+  font-style: italic;
+}
+.later-show-announce-title {
+  margin-bottom: calc(var(--cw) * 4);
+  color: #1a0466;
+}
+.later-show-subtitle {
+  font: 600 calc(var(--cw) * 4.5) Arial, Helvetica, sans-serif;
+  color: #dfbdb2;
+  margin: 0;
+  margin-bottom: calc(var(--cw) * 1.9);
+  padding-top: calc(var(--cw) * 1);
+  display: block;
+}
+.later-show-subtitle2 {
+  font: 600 calc(var(--cw) * 5.5) Fino, Arial, Helvetica, sans-serif;
+  color: #dfbdb2;
+  margin: 0;
+  padding-top: calc(var(--cw) * 1);
+  margin-top: calc(var(--cw) * 2.5);
+  display: block;
+}
+.show-description {
+  width: 75%;
+  margin: auto;
+}
+.show-description p {
+  font: 400 calc(var(--cw) * 2.8) Arial, Helvetica, sans-serif;
+  color: #dfbdb2;
+}
+
+.show-description-info {
+  width: 75%;
+  font: 400 calc(var(--cw) * 3.5) Arial, Helvetica, sans-serif;
+  color: #dfbdb2;
+}
+.show-description2 {
+  font: 500 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
+  color: #dfbdb2;
+  margin: 0;
+  display: block;
+}
+.video-container {
+  /* This sets the container's width to 70% of its parent element's width */
+  width: 80%;
+  /* Center the container on the page (optional) */
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  /* Set iframe to fill the container width */
+  width: 100%;
+  /* This maintains the 16:9 ratio, adjusting height automatically */
+  aspect-ratio: 16 / 9;
+  /* Ensure no border is displayed */
+  border: solid #dfbdb2;
 }
 
 .info-text-columns,
