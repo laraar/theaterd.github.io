@@ -172,6 +172,10 @@ to avoid the need for small fractions.*/
 #audition-announcement-group {
   display: none;
 }
+#auditions-link {
+  color: inherit;
+  font: 700 calc(var(--cw) * 3) Arial, Helvetica, sans-serif;
+}
 
 .show-announcement-columns {
   width: 100%;
